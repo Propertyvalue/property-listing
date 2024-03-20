@@ -1,0 +1,118 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rents",
+  "info": {
+    "singularName": "rent",
+    "pluralName": "rents",
+    "displayName": "rent",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "text"
+    },
+    "Address": {
+      "type": "text"
+    },
+    "Bathrooms": {
+      "type": "text"
+    },
+    "Bedrooms": {
+      "type": "text"
+    },
+    "Added_On_Date": {
+      "type": "text"
+    },
+    "Agent_Name": {
+      "type": "text"
+    },
+    "Agent_Phone": {
+      "type": "text"
+    },
+    "Type": {
+      "type": "text"
+    },
+    "Property_Type": {
+      "type": "text"
+    },
+    "Price": {
+      "type": "text"
+    },
+    "Verified": {
+      "type": "text"
+    },
+    "Reference": {
+      "type": "text"
+    },
+    "Permit_Number": {
+      "type": "text"
+    },
+    "Agent_Brn": {
+      "type": "text"
+    },
+    "Freehold": {
+      "type": "text"
+    },
+    "Completion_Date": {
+      "type": "text"
+    },
+    "Price_Duration": {
+      "type": "text"
+    },
+    "Property_Age": {
+      "type": "text"
+    },
+    "Url": {
+      "type": "text"
+    },
+    "Size_Min": {
+      "type": "text"
+    },
+    "Furnishing": {
+      "type": "text"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "id_ref": {
+      "type": "text"
+    },
+    "descriptionHTML": {
+      "type": "text"
+    },
+    "price_Currency": {
+      "type": "text"
+    },
+    "lat": {
+      "type": "float"
+    },
+    "long": {
+      "type": "float"
+    },
+    "images_str": {
+      "type": "text"
+    },
+    "features_str": {
+      "type": "text"
+    },
+    "broker": {
+      "type": "text"
+    },
+    "rera": {
+      "type": "text"
+    },
+    "reraPermitUrl": {
+      "type": "text"
+    },
+    "similar_sale_t": {
+      "type": "json"
+    },
+    "similar_rent_t": {
+      "type": "json"
+    }
+  }
+}
