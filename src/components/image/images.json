@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_image_images",
+  "info": {
+    "displayName": "Images",
+    "icon": "attachment"
+  },
+  "options": {},
+  "attributes": {
+    "image_url": {
+      "type": "text"
+    }
+  }
+}
