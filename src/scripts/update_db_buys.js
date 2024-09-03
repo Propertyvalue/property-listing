@@ -19,9 +19,25 @@ async function fetchDataAndInsert() {
         const datasetId2 = 'fYUiA2T5Zz4qemmJE'
         const dataset3 = 'XV9EAdgKOnY4gJ9yL'
         const dataset4 = 'xmDzlaGU0rI5aHySi'
-        console.log(dataset4)
+        const dataset5 = 'rQBbj7UneAWzR0Mq5'
+        const dataset6 = 'gwizlOwiNMly6cVPF'
+        const dataset7 = '3dY0brjLiEMEizIra'
+        const dataset8 = 'PhalvRSroKDXCxW8N'
+        const dataset9 = 'tV2KGSYbIH5gckRp3'
+        console.log(dataset7)
+        try {
+            // Call the list method of the DatasetCollectionClient
+            const datasets = await client.datasets().list();
+            // Print the dataset IDs and names
+            datasets.items.forEach(dataset => {
+                console.log(`Dataset ID: ${dataset.id}, Name: ${dataset.name}`);
+            });
+        } catch (error) {
+            console.error('Error:', error.message);
+        }
+
         // Fetch items from the aPify dataset
-        const { items } = await client.dataset(dataset4).listItems()
+        const { items } = await client.dataset(dataset7).listItems()
         let counter = 1;
         // Insert each item into PostgreSQL database
         for (const item of items) {
@@ -93,6 +109,8 @@ async function fetchDataAndInsert() {
         // Close the database connection
         pgp.end()
     }
+
+
 }
 
 // Call the function to fetch and insert data
